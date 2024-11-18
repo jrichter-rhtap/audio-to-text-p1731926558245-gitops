@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  rhtap/gitops: audio-to-text-p1731926558245 
+  janus-idp.io/tekton: audio-to-text-p1731926558245
+  backstage.io/kubernetes-id: audio-to-text-p1731926558245
+  backstage.io/kubernetes-namespace: rhdh-app 
+  app.kubernetes.io/part-of: audio-to-text-p1731926558245
+resources: 
+- application-dev.yaml
